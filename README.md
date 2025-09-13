@@ -16,7 +16,7 @@
            height="88" 
            style="display: block; border:none;" />
     </td>
-    <td style="border: none; padding: 0 15px; vertical-align: middle;">
+    <td style="border: none; padding: 0 15px; align: center;">
       <h3 style="margin: 0;">
         <a href="https://www.fiverr.com/s/DB389zA">Fiverr</a> | 
         <a href="https://www.linkedin.com/in/leeroicayetano">LinkedIn</a> | 
