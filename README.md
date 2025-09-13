@@ -2,8 +2,6 @@
 
 <h3 align="center">CTF Player | SOC Analyst Aspirant | AI & IoT Hobbyist | Custom OS Development</h3>
 
----
-
 <table align="center">
   <tr>
     <td>
