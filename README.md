@@ -9,7 +9,7 @@
 
 <table align="center" style="border-collapse: collapse; border: none;">
   <tr>
-    <td style="border: none; padding: 0; vertical-align:center;">
+    <td style="border: none; padding: 0; vertical-align:baseline;">
       <img src="https://tryhackme-badges.s3.amazonaws.com/Fr05tyy.png" 
            alt="Your Image Badge" 
            width="329" 
