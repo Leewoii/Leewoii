@@ -1,6 +1,12 @@
 <h1 align="center">LEE | Leewoii ❄️</h1>
 
-<a align="center;" href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Londrina+Shadow&size=30&duration=2000&pause=500&color=FFFFFF&background=FFFFFF00&center=true&vCenter=true&width=435&lines=BSIT+Major+in+Network+Technology;SOC+Analyst+Aspirant;CTF+Player;Custom+OS+Developer;AI+%26+IoT+Hobbyist" alt="Typing SVG" /></a>
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Londrina+Shadow&size=30&duration=2000&pause=500&color=FFFFFF&background=FFFFFF00&center=true&vCenter=true&width=435&lines=BSIT+Major+in+Network+Technology;SOC+Analyst+Aspirant;CTF+Player;Custom+OS+Developer;AI+%26+IoT+Hobbyist" 
+         alt="Typing SVG" />
+  </a>
+</p>
+
 
 <table align="center">
   <tr>
