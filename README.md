@@ -1,6 +1,6 @@
 <h1 align="center">LEE | Leewoii ❄️</h1>
 
-<h3 align="center">CTF Player | SOC Analyst Aspirant | AI & IoT Hobbyist | Custom OS Development</h3>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Londrina+Shadow&size=30&duration=2000&pause=500&color=FFFFFF&background=FFFFFF00&center=true&vCenter=true&width=435&lines=BSIT+Major+in+Network+Technology;SOC+Analyst+Aspirant;CTF+Player;Custom+OS+Developer;AI+%26+IoT+Hobbyist)](https://git.io/typing-svg)
 
 <table align="center">
   <tr>
