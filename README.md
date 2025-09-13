@@ -9,14 +9,14 @@
 
 <table align="center" style="border-collapse: collapse; border: none;">
   <tr>
-    <td style="border: none; padding: 0; vertical-align:baseline;">
+    <td style="border: none; padding: 0; display: flex; justify-content: center; align-items: center;">
       <img src="https://tryhackme-badges.s3.amazonaws.com/Fr05tyy.png" 
            alt="Your Image Badge" 
            width="329" 
            height="88" 
-           style="display: block; border:none;" />
+           style="border:none;" />
     </td>
-    <td style="border: none; padding: 0 15px; align: center;">
+    <td style="border: none; padding: 0 15px; display: flex; justify-content: center; align-items: center;">
       <h3 style="margin: 0;">
         <a href="https://www.fiverr.com/s/DB389zA">Fiverr</a> | 
         <a href="https://www.linkedin.com/in/leeroicayetano">LinkedIn</a> | 
@@ -25,3 +25,4 @@
     </td>
   </tr>
 </table>
+
