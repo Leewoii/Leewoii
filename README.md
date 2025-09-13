@@ -16,3 +16,9 @@
     </td>
   </tr>
 </table>
+<h2>ℹ️ Project info</h2>
+<div>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Leewoii/Leewoii?color=181717&logo=github&style=for-the-badge&logoColor=181717" height="22px">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/Leewoii/Leewoii?color=181717&logo=github&style=for-the-badge&logoColor=181717" height="22px">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Leewoii/Leewoii?color=181717&logo=github&style=for-the-badge&logoColor=181717" height="22px">
+<img alt="Last commit" src="https://img.shields.io/github/last-commit/Leewoii/Leewoii?color=F05032&logo=git&logoColor&style=for-the-badge" height="22px">
