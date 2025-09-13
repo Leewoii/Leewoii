@@ -7,17 +7,21 @@
   </a>
 </p>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-  <img src="https://tryhackme-badges.s3.amazonaws.com/Fr05tyy.png" 
-       alt="Your Image Badge" 
-       width="329" 
-       height="88" 
-       style="border:none;" />
-  <h3 style="margin: 0;">
-    <a href="https://www.fiverr.com/s/DB389zA">Fiverr</a> | 
-    <a href="https://www.linkedin.com/in/leeroicayetano">LinkedIn</a> | 
-    <a href="https://tryhackme.com/p/Fr05tyy">TryHackMe</a>
-  </h3>
-</div>
-
-
+<table align="center" style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; padding: 0;">
+      <img src="https://tryhackme-badges.s3.amazonaws.com/Fr05tyy.png" 
+           alt="Your Image Badge" 
+           width="329" 
+           height="88" 
+           style="display: block; border:none;" />
+    </td>
+    <td style="border: none; padding: 0 15px; vertical-align: middle;">
+      <h3 style="margin: 0;">
+        <a href="https://www.fiverr.com/s/DB389zA">Fiverr</a> | 
+        <a href="https://www.linkedin.com/in/leeroicayetano">LinkedIn</a> | 
+        <a href="https://tryhackme.com/p/Fr05tyy">TryHackMe</a>
+      </h3>
+    </td>
+  </tr>
+</table>
