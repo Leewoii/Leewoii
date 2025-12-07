@@ -11,11 +11,6 @@
   <tr>
     <td>
       <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3748631" style='border:none;'></iframe>
-      <img src="https://tryhackme-badges.s3.amazonaws.com/Fr05tyy.png" 
-           alt="Your Image Badge" 
-           width="329" 
-           height="88" 
-           style="border:none;" />
     </td>
     <td>
       <h3 style="margin: 0;">
