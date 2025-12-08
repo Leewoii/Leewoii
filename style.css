@@ -758,7 +758,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     width: 85%;
 }
 
-.company-card img {
+.company-logo-img {
     background-color: #121212;
     box-shadow: 0 0 3px 2px #ae00ff40;
 }
