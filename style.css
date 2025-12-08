@@ -11,6 +11,16 @@
     --font-meow-script: "Meow Script", cursive;
 }
 
+* {
+    user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+html, body, * {
+    cursor: url('img/Arrow.png') 0 0, auto !important;
+}
+
 html, body {
     margin: 0;
     padding: 0; /* This background-color effectively has z-index: 0 as it's the body background */
