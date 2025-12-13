@@ -635,29 +635,38 @@
                 renderCyberSkills();
             });
         </script>
-        <span id="visit-count">Loading...</span>
-        page views
         <script>
-            const base =
-              "https://api.counterapi.dev/v2/lee-roi-andrei-cayetanos-team-2106/total-portfolio-view";
-
-            if (!sessionStorage.getItem("counted")) {
-              sessionStorage.setItem("counted", "true");
-
-              fetch(base + "/up")
-                .then(r => r.json())
-                .then(j => {
+          const BASE =
+            "https://api.counterapi.dev/v2/lee-roi-andrei-cayetanos-team-2106/total-portfolio-view";
+        
+          const COUNT_KEY = "portfolio_view_last_count";
+          const COOLDOWN_HOURS = 6; // change to 12 or 24 if you want stricter
+          const now = Date.now();
+          const lastCount = localStorage.getItem(COUNT_KEY);
+        
+          const canCount =
+            !lastCount || now - parseInt(lastCount, 10) > COOLDOWN_HOURS * 60 * 60 * 1000;
+        
+          const updateView = (url) => {
+            fetch(url)
+              .then(r => r.json())
+              .then(j => {
+                if (j?.data?.up_count !== undefined) {
                   document.getElementById("visit-count").innerText =
                     j.data.up_count;
-                });
-            } else {
-              fetch(base)
-                .then(r => r.json())
-                .then(j => {
-                  document.getElementById("visit-count").innerText =
-                    j.data.up_count;
-                });
-            }
+                }
+              })
+              .catch(() => {
+                document.getElementById("visit-count").innerText = "—";
+              });
+          };
+        
+          if (canCount) {
+            localStorage.setItem(COUNT_KEY, now.toString());
+            updateView(BASE + "/up");
+          } else {
+            updateView(BASE);
+          }
         </script>
     </body>
 </html>
