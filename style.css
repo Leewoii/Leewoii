@@ -85,7 +85,7 @@ a {
 }
 
  /* Visit counter */
-.visit-counter span{
+.visit-counter{
     display: flex;
     align-items: center;
     gap: 6px;
