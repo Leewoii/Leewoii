@@ -34,16 +34,26 @@
                 <div class="glow-blob glow-blob--8">
                 </div>
             </div>
-            <nav class="main-nav" role="navigation" aria-label="Main navigation">
-                <div class="nav-background" aria-hidden="true">
+            <nav class="main-nav">
+                <div class="nav-background">
                 </div>
-                <a href="#home" class="nav-link">HOME</a>
-                <a href="#about" class="nav-link">ABOUT</a>
-                <a href="#experience" class="nav-link">EXPERIENCE</a>
-                <a href="#certifications" class="nav-link">CERTIFICATIONS</a>
-                <a href="#projects" class="nav-link">PROJECTS</a>
-                <a href="#contact" class="nav-link">CONTACT</a>
-                <img class="logo-image" src="img/cf-logo.png" alt="Portfolio Logo" />
+                <!-- LEFT FIXED -->
+                <div class="nav-left">
+                    <img src="img/cf-logo.png" class="logo-image" alt="Logo">
+                    <div class="visit-counter">
+                        <span class="visit-eye">👁</span>
+                        <span id="visit-count">0</span>
+                    </div>
+                </div>
+                <!-- CENTER -->
+                <div class="nav-center">
+                    <a class="nav-link" href="#home">HOME</a>
+                    <a class="nav-link" href="#about">ABOUT</a>
+                    <a class="nav-link" href="#experience">EXPERIENCE</a>
+                    <a class="nav-link" href="#certifications">CERTIFICATIONS</a>
+                    <a class="nav-link" href="#projects">PROJECTS</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </div>
             </nav>
             <main id="main-content">
                 <section class="section home-section" id="home">
@@ -624,6 +634,30 @@
                 // Initial render
                 renderCyberSkills();
             });
+        </script>
+        <span id="visit-count">Loading...</span>
+        page views
+        <script>
+            const base =
+              "https://api.counterapi.dev/v2/lee-roi-andrei-cayetanos-team-2106/total-portfolio-view";
+
+            if (!sessionStorage.getItem("counted")) {
+              sessionStorage.setItem("counted", "true");
+
+              fetch(base + "/up")
+                .then(r => r.json())
+                .then(j => {
+                  document.getElementById("visit-count").innerText =
+                    j.data.up_count;
+                });
+            } else {
+              fetch(base)
+                .then(r => r.json())
+                .then(j => {
+                  document.getElementById("visit-count").innerText =
+                    j.data.up_count;
+                });
+            }
         </script>
     </body>
 </html>
