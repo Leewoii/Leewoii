@@ -47,7 +47,7 @@ a {
     font-weight: 700;
 }
 
- /* Skip to Main Content Link for Accessibility */
+/* Skip to Main Content Link for Accessibility */
 .skip-to-main {
     position: absolute;
     top: -40px;
@@ -64,7 +64,7 @@ a {
     top: 0;
 }
 
- /* --- Main Layout Container --- */
+/* --- Main Layout Container --- */
 .portfolio-container {
     position: relative;
     width: 100%;
@@ -74,18 +74,18 @@ a {
 }
 
 #main-content {
- /* The main content area must have a z-index to stack above the glows */
+    /* The main content area must have a z-index to stack above the glows */
     position: relative;
     z-index: 2; /* Set Main Content to z-index: 2 */
 }
 
- /* Logo */
+/* Logo */
 .logo-image {
     height: 42px;
 }
 
- /* Visit counter */
-.visit-counter{
+/* Visit counter */
+.visit-counter {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -102,7 +102,7 @@ a {
     font-size: 16px;
 }
 
- /* --- Background Glow Effects --- */
+/* --- Background Glow Effects --- */
 .background-glow {
     position: absolute;
     top: 0;
@@ -189,7 +189,7 @@ a {
     opacity: 0.5;
 }
 
- /* --- Sections & Titles --- */
+/* --- Sections & Titles --- */
 .section {
     padding: 100px 5vw; /* Responsive padding */
     margin: 0 auto;
@@ -217,7 +217,7 @@ a {
     margin-top: 15px;
 }
 
- /* --- Navigation Bar --- */
+/* --- Navigation Bar --- */
 .main-nav {
     position: fixed;
     top: 0;
@@ -230,7 +230,7 @@ a {
     justify-content: center;
 }
 
- /* LOCK LOGO TO LEFT */
+/* LOCK LOGO TO LEFT */
 .nav-left {
     position: absolute;
     left: 100px; /* ← corner offset */
@@ -241,13 +241,13 @@ a {
     gap: 12px;
 }
 
- /* CENTER LINKS */
+/* CENTER LINKS */
 .nav-center {
     display: flex;
     gap: 22px;
 }
 
- /* LOGO */
+/* LOGO */
 .logo-image {
     height: 50px;
     width: auto;
@@ -276,7 +276,7 @@ a {
     color: var(--color-primary-accent);
 }
 
- /* --- Home Section --- */
+/* --- Home Section --- */
 .home-section {
     display: flex;
     justify-content: space-between;
@@ -315,12 +315,12 @@ a {
     font-size: 76px;
     background: #DD00FF;
     background: linear-gradient(to right, #DD00FF 0%, #009DFF 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .main-title {
- /* The <a> element must be inline-block for text-align: center on the parent to affect it */
+    /* The <a> element must be inline-block for text-align: center on the parent to affect it */
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -341,7 +341,7 @@ a {
     border-radius: 12px;
 }
 
- /* Add this new class to your style-final.css */
+/* Add this new class to your style-final.css */
 .cert-badge-wrapper {
     display: flex;
     justify-content: center; /* Centers the iframe horizontally */
@@ -349,23 +349,23 @@ a {
     margin: 20px 0; /* Add some vertical spacing */
 }
 
- /* Remove the inline style align-self: start, it is no longer necessary */
+/* Remove the inline style align-self: start, it is no longer necessary */
 iframe[src^="https://tryhackme.com/api/v2/badges"] {
     border: none;
     width: 21rem;
     height: 120px; /* Set an explicit height for the iframe content */
 }
 
- /* --- About Section --- */
+/* --- About Section --- */
 .about-content {
     display: flex;
     gap: 50px;
     align-items: flex-start;
 }
 
- /* ========================= */
- /*      ABOUT TABS / SKILLS  */
- /* ========================= */
+/* ========================= */
+/*      ABOUT TABS / SKILLS  */
+/* ========================= */
 .about-tabs {
     grid-column: 1 / -1;
     display: flex;
@@ -407,7 +407,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     color: #fff;
 }
 
- /* PANELS */
+/* PANELS */
 .about-panels {
     grid-column: 1 / -1;
     margin-top: -10px;
@@ -435,7 +435,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     color: #fff;
 }
 
- /* CYBERSECURITY SKILL BARS */
+/* CYBERSECURITY SKILL BARS */
 .cyber-header-row {
     display: flex;
     flex-wrap: wrap;
@@ -468,11 +468,16 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     outline: none;
 }
 
+.cyber-select:hover {
+    box-shadow: var(--shadow-accent);
+    transition: box-shadow 0.4s;
+}
+
 .cyber-select:focus {
     border-color: #DD00FF;
 }
 
- /* Bars (you mostly have these already, keep or merge them) */
+/* Bars (you mostly have these already, keep or merge them) */
 .cyber-skill-list {
     list-style: none;
     padding: 0;
@@ -510,7 +515,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     transform-origin: left;
 }
 
- /* Fade + fill animations */
+/* Fade + fill animations */
 
 @keyframes fillBar {
     from {
@@ -519,10 +524,10 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     to {
         transform: scaleX(1);
     }
- /* respects the inline width */
+    /* respects the inline width */
 }
 
- /* TECH STACK TAGS */
+/* TECH STACK TAGS */
 .tech-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -551,7 +556,12 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     border: 1px solid #ffffff20;
 }
 
- /* EDUCATION */
+.tech-tag:hover {
+    box-shadow: var(--shadow-accent);
+    transition: box-shadow 0.4s;
+}
+
+/* EDUCATION */
 .education-list {
     list-style: none;
     padding: 0;
@@ -571,7 +581,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     color: var(--color-light-grey);
 }
 
- /* SERVICES */
+/* SERVICES */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -585,13 +595,18 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     border: 1px solid #ffffff14;
 }
 
+.service-card:hover {
+    box-shadow: var(--shadow-accent);
+    transition: box-shadow 0.4s;
+}
+
 .service-text {
     font-size: 14px;
     color: var(--color-light-grey);
     line-height: 1.5;
 }
 
- /* ANIMATIONS */
+/* ANIMATIONS */
 
 @keyframes aboutFade {
     from {
@@ -604,7 +619,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     }
 }
 
- /* Responsive tweaks */
+/* Responsive tweaks */
 
 @media (max-width: 900px) {
     .about-panel {
@@ -680,9 +695,13 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     padding: 10px 40px;
     margin-top: 30px;
     border-radius: 12px;
-    box-shadow: var(--shadow-accent);
     background-color: var(--color-dark-grey);
     transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    box-shadow: var(--shadow-accent);
+    transition: box-shadow 0.4s;
 }
 
 .skills-wrapper {
@@ -720,7 +739,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     color: var(--color-white);
 }
 
- /* --- Experience Section --- */
+/* --- Experience Section --- */
 .experience-timeline {
     display: grid;
     grid-template-columns: 1fr 80px 1fr;
@@ -734,7 +753,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     align-self: center;
 }
 
- /* Extend vertical line slightly above and below */
+/* Extend vertical line slightly above and below */
 .experience-timeline::before {
     content: "";
     position: absolute;
@@ -746,7 +765,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     transform: translateX(-50%);
 }
 
- /* --- MARKERS --- */
+/* --- MARKERS --- */
 .exp-marker {
     grid-column: 2;
     width: 36px;
@@ -768,7 +787,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     left: 10px;
 }
 
- /* --- LEFT & RIGHT ITEMS --- */
+/* --- LEFT & RIGHT ITEMS --- */
 .exp-left {
     grid-column: 1;
     justify-self: end;
@@ -779,7 +798,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     justify-self: start;
 }
 
- /* --- JOB CARD STYLE --- */
+/* --- JOB CARD STYLE --- */
 .job-card {
     background: #141414;
     padding: 15px 30px;
@@ -799,7 +818,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     color: #9b9b9b;
 }
 
- /* COMPANY BLOCKS */
+/* COMPANY BLOCKS */
 .company-card {
     text-align: center;
     width: 85%;
@@ -827,19 +846,69 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     color: #9b9b9b;
 }
 
- /* --- Certifications Section --- */
- /* Individual Cards */
+/* --- Certifications Section --- */
+.cert-carousel {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* PAGINATION DOTS */
+.cert-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cert-dot {
+    width: 12px;
+    height: 12px;
+    background: #ffffff40;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cert-dot.active {
+    background: var(--color-primary-accent);
+}
+
+.cert-slide {
+    display: flex;
+    flex-wrap: wrap; /* allows 3×2 layout */
+    justify-content: center; /* centers cards */
+    gap: 70px 100px; /* your original spacing */
+    min-width: 100%; /* required for sliding */
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.cert-track {
+    display: flex; /* THIS is the missing rule */
+    flex-direction: row;
+    transition: transform 0.6s ease;
+    width: 100%;
+}
+
+/* Individual Cards */
 .cert-card {
     background: #151515;
     padding: 10px 50px;
     border-radius: 20px;
     width: 320px;
     min-height: 225px;
-    box-shadow: var(--shadow-accent);
     text-align: center;
     border: 1px solid #262626;
     flex-grow: 0;
     flex-shrink: 0;
+}
+
+.cert-card:hover {
+    box-shadow: var(--shadow-accent);
+    transition: box-shadow 0.3s;
 }
 
 .cert-provider {
@@ -870,7 +939,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     opacity: 0.6;
 }
 
- /* Pagination dots */
+/* Pagination dots */
 .cert-dots {
     text-align: center;
     margin-top: 40px;
@@ -891,7 +960,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     background: var(--color-primary-accent);
 }
 
- /* --- Projects Section --- */
+/* --- Projects Section --- */
 .projects-section {
     margin-bottom: 100px;
 }
@@ -943,7 +1012,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     color: white;
 }
 
- /* DOTS */
+/* DOTS */
 .projects-carousel-dots {
     display: flex;
     justify-content: center;
@@ -964,21 +1033,21 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     opacity: 1;
 }
 
- /* CONTACT SECTION */
+/* CONTACT SECTION */
 .contact-section {
     padding: 120px 0 0px 0;
     position: relative;
     overflow-y: hidden;
 }
 
- /* HEADING */
+/* HEADING */
 .contact-section .section-title {
     width: 60%;
     margin: 0 auto 40px auto;
     text-align: left;
 }
 
- /* MAIN FLEX */
+/* MAIN FLEX */
 .contact-container {
     width: 65%;
     margin: 0 auto;
@@ -988,7 +1057,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     gap: 40px;
 }
 
- /* LEFT SIDE */
+/* LEFT SIDE */
 .contact-left {
     flex: 1;
 }
@@ -1000,7 +1069,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     max-width: 520px;
 }
 
- /* ICON GRID (3 left, 2 right) */
+/* ICON GRID (3 left, 2 right) */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1028,7 +1097,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     height: 45px;
 }
 
- /* IMAGE – BIG, BOTTOM OVERFLOW */
+/* IMAGE – BIG, BOTTOM OVERFLOW */
 .contact-right {
     flex: 1;
     display: flex;
@@ -1047,7 +1116,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     transform: scale(1.18); /* EXTRA SIZE BOOST */
 }
 
- /* RESPONSIVE */
+/* RESPONSIVE */
 
 @media (max-width: 1000px) {
     .contact-container {
@@ -1071,8 +1140,8 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     }
 }
 
- /* --- Responsive Adjustments (Media Queries) --- */
- /* Tablet and Smaller Desktop Screens (1200px) */
+/* --- Responsive Adjustments (Media Queries) --- */
+/* Tablet and Smaller Desktop Screens (1200px) */
 
 @media (max-width: 1200px) {
     .home-section {
@@ -1124,14 +1193,14 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     }
 }
 
- /* Mobile Screens (600px) */
+/* Mobile Screens (600px) */
 
 @media (max-width: 768px) {
- /* Center the title on mobile screens */
+    /* Center the title on mobile screens */
     .intro-content {
         text-align: center;
     }
- /* Optional: You may also need to adjust the width of the SVG to prevent overflow */
+    /* Optional: You may also need to adjust the width of the SVG to prevent overflow */
     .main-title img {
         max-width: 90vw; /* Prevents the SVG from exceeding screen width */
         height: auto;
@@ -1182,47 +1251,4 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     .contact-links-nav {
         grid-template-columns: 1fr;
     }
-}
-
- /* ================================ */
- /*    CERTIFICATIONS CAROUSEL      */
- /* ================================ */
-.cert-carousel {
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-
- /* PAGINATION DOTS */
-.cert-dots {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.cert-dot {
-    width: 12px;
-    height: 12px;
-    background: #ffffff40;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.cert-dot.active {
-    background: var(--color-primary-accent);
-}
-
- /* FIX FOR CAROUSEL SLIDES — required! */
-.cert-slide {
-    display: flex;
-    flex-wrap: wrap; /* allows 3×2 layout */
-    justify-content: center; /* centers cards */
-    gap: 70px 100px; /* your original spacing */
-    min-width: 100%; /* required for sliding */
-    padding: 20px 0;
-    box-sizing: border-box;
 }
