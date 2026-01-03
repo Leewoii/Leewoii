@@ -887,7 +887,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 }
 
 .cert-track {
-    display: flex; /* THIS is the missing rule */
+    display: flex;
     flex-direction: row;
     transition: transform 0.6s ease;
     width: 100%;
