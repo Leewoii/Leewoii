@@ -984,7 +984,6 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 
 .accent-char {
     color: #a855f7; /* Purple accent */
-    margin-right: 0.5rem;
 }
 
 .title-underline {
