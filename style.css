@@ -402,8 +402,8 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 }
 
 .about-tab.active {
-    background: #670097;
-    border-color: transparent;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(168, 85, 247, 0.2);
     color: #fff;
 }
 
@@ -415,13 +415,13 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 
 .about-panel {
     display: none;
-    background-color: rgba(15, 15, 20, 0.85);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 24px 26px;
+    padding: 10px 50px;
     padding-top: 24px;
     padding-right: 26px;
     padding-bottom: 24px;
-    box-shadow: var(--shadow-accent);
+    border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .about-panel.active {
@@ -459,7 +459,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 }
 
 .cyber-select {
-    background-color: #14141e;
+    background: rgba(0, 0, 0, 0.349);
     border-radius: 999px;
     border: 1px solid #ffffff30;
     padding: 6px 14px;
@@ -535,10 +535,10 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 }
 
 .tech-card {
-    background-color: #14141e;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
     padding: 16px 18px;
-    border: 1px solid #ffffff14;
+    border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .tech-tags {
@@ -551,9 +551,9 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     font-size: 13px;
     padding: 4px 10px;
     border-radius: 999px;
-    background: #1f1f2b;
+    background: rgba(46, 46, 46, 0.1);
     color: var(--color-light-grey);
-    border: 1px solid #ffffff20;
+    border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .tech-tag:hover {
@@ -589,10 +589,10 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 }
 
 .service-card {
-    background-color: #14141e;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
     padding: 18px 20px;
-    border: 1px solid #ffffff14;
+    border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .service-card:hover {
@@ -800,11 +800,11 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 
 /* --- JOB CARD STYLE --- */
 .job-card {
-    background: #141414;
-    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 50px;
     border-radius: 12px;
     width: 85%;
-    box-shadow: 0 0 3px 2px #ae00ff40;
+    border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .job-title {
@@ -895,20 +895,23 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 
 /* Individual Cards */
 .cert-card {
-    background: #151515;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
     padding: 10px 50px;
-    border-radius: 20px;
+    border-radius: 12px;
     width: 320px;
     min-height: 225px;
     text-align: center;
-    border: 1px solid #262626;
+    border: 1px solid rgba(168, 85, 247, 0.2);
     flex-grow: 0;
     flex-shrink: 0;
 }
 
 .cert-card:hover {
-    box-shadow: var(--shadow-accent);
-    transition: box-shadow 0.3s;
+    background: rgba(168, 85, 247, 0.08);
+    border-color: rgba(168, 85, 247, 0.4);
+    transform: translateY(-5px);
 }
 
 .cert-provider {
@@ -962,75 +965,208 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 
 /* --- Projects Section --- */
 .projects-section {
-    margin-bottom: 100px;
+    padding: 4rem 2rem;
+    min-height: 100vh;
 }
 
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.accent-char {
+    color: #a855f7; /* Purple accent */
+    margin-right: 0.5rem;
+}
+
+.title-underline {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #a855f7, #7c3aed);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* Features Container - Two Column Layout */
+.features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.Project-heading {
+    font-size: 1.5rem;
+    color: #ffffff; /* Green color for Features heading */
+    margin-bottom: 1.5rem;
+    align-self: center;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -5rem;
+}
+
+.Project-icon {
+    color: #a855f7;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(168, 85, 247, 0.08);
+    border-color: rgba(168, 85, 247, 0.4);
+    transform: translateX(5px);
+}
+
+.feature-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-icon {
+    color: #a855f7;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+}
+
+.feature-title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.feature-description {
+    color: #a1a1aa;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 1.75rem; /* Align with title */
+}
+
+/* Carousel Dots */
+
 .projects-carousel-container {
-    width: 100%;
     overflow: hidden;
-    margin-top: 40px;
+    margin: 0 auto;
 }
 
 .projects-carousel-track {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .project-slide {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
     min-width: 100%;
-    padding: 20px 0;
+    flex-shrink: 0;
+    padding: 0 1rem;
 }
 
-.project-card {
-    width: 380px;
-    background: var(--color-dark-grey);
-    box-shadow: var(--shadow-accent);
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    transition: transform 0.3s;
+/* Update features-container for carousel context */
+.project-slide .features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+/* Ensure image doesn't break layout */
+.project-slide .features-image {
+    position: relative;
+    top: 7rem;
 }
 
-.project-image {
+.project-slide .features-image img {
     width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid rgba(218, 98, 255, 0.3);
 }
 
-.project-title {
-    margin-top: 15px;
-    font-size: 1.2rem;
-    color: white;
+@media (max-width: 1250px) {
+    .project-slide .features-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-slide .features-image {
+        position: relative;
+        top: 1rem;
+        order: -1;
+        /* Center the image container */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .project-slide .features-image img {
+        width: 30%;
+    }
 }
-
-/* DOTS */
 .projects-carousel-dots {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
-    gap: 10px;
+    gap: 0.75rem;
+    margin-top: 2rem;
 }
 
 .projects-carousel-dots .dot {
-    width: 10px;
-    height: 10px;
-    background: #6C00FF;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    opacity: 0.4;
+    background: rgba(168, 85, 247, 0.3);
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .projects-carousel-dots .dot.active {
-    opacity: 1;
+    background: #a855f7;
+    transform: scale(1.2);
+}
+
+.projects-carousel-dots .dot:hover {
+    background: rgba(168, 85, 247, 0.6);
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        padding: 2rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .features-heading {
+        font-size: 1.5rem;
+    }
 }
 
 /* CONTACT SECTION */
