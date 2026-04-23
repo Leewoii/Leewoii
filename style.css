@@ -218,6 +218,43 @@ a {
 }
 
 /* --- Navigation Bar --- */
+.mobile-nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 99999;
+    pointer-events: auto;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px; /* Standard mobile touch target size */
+    height: 44px;
+    padding: 12px 6px; /* Spacing for the hamburger lines */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-nav-toggle .hamburger-line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-light-grey);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.main-nav.menu-open .hamburger-line:nth-child(1) {
+    transform: translateY(10.5px) rotate(45deg);
+}
+.main-nav.menu-open .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+.main-nav.menu-open .hamburger-line:nth-child(3) {
+    transform: translateY(-10.5px) rotate(-45deg);
+}
+
 .main-nav {
     position: fixed;
     top: 0;
@@ -1113,6 +1150,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 @media (max-width: 1250px) {
     .project-slide .features-container {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .project-slide .features-image {
@@ -1126,7 +1164,17 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     }
     
     .project-slide .features-image img {
-        width: 30%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-slide .features-container {
+        gap: 1.5rem;
+    }
+    
+    .project-slide .features-image img {
+        width: 90%;
     }
 }
 .projects-carousel-dots {
@@ -1342,19 +1390,47 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
     }
 }
 
-@media (max-width: 600px) {
-    .main-nav {
-        justify-content: space-around;
-        padding: 0 10px;
+@media (max-width: 1110px) {
+    .mobile-nav-toggle {
+        display: flex;
+    }
+    .nav-left {
+        left: 20px;
+    }
+    .nav-center {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(18, 10, 28, 0.95);
+        backdrop-filter: blur(28px);
+        -webkit-backdrop-filter: blur(28px);
+        border-bottom: 1px solid rgba(180, 0, 255, 0.2);
+        padding: 20px 0;
+        gap: 15px;
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    .main-nav.menu-open .nav-center {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
     .nav-link {
-        padding: 0 5px;
-        font-size: 14px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
     }
-    .logo-image {
-        position: static;
-        transform: none;
+    .nav-link::after {
+        display: none;
     }
+}
+
+@media (max-width: 600px) {
     .home-section {
         padding-top: 100px;
         min-height: auto;
