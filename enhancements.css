@@ -410,27 +410,53 @@ body.js-ready #main-content > section.out-view .motion-item {
 
 @media (max-width: 700px) {
     .contact-section .contact-container {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 0.85rem;
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) clamp(150px, 34vw, 220px) !important;
+        align-items: end !important;
+        gap: 1rem !important;
+    }
+
+    .contact-section .contact-left {
+        width: 100%;
+    }
+
+    .contact-section .contact-grid {
+        width: 100% !important;
+        max-width: 240px !important;
     }
 
     .contact-section .contact-right {
         width: 100%;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         margin-top: 0;
-        padding-top: 0.75rem;
-        overflow: visible;
+        padding-top: 0;
+        overflow: hidden;
     }
 
     .contact-section .contact-photo {
-        width: clamp(320px, 96vw, 420px) !important;
-        max-width: none !important;
+        width: clamp(180px, 34vw, 260px) !important;
+        max-width: 100% !important;
         margin: 0 auto 0 !important;
         top: auto !important;
         transform: none !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .contact-section .contact-container {
+        grid-template-columns: 1fr !important;
+        align-items: center !important;
+        gap: 0.85rem !important;
+    }
+
+    .contact-section .contact-right {
+        align-items: center !important;
+        overflow: visible !important;
+    }
+
+    .contact-section .contact-photo {
+        width: clamp(220px, 72vw, 300px) !important;
     }
 }
 
