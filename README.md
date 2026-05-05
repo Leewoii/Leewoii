@@ -19,7 +19,6 @@
     <td>
       <h3 style="margin: 0;">
         <p align="center">
-          <a href="https://www.fiverr.com/lc_frostyyy">Fiverr</a> •
           <a href="https://www.linkedin.com/in/leeroicayetano">LinkedIn</a> •
           <a href="https://tryhackme.com/p/Fr05tyy">TryHackMe</a> •
           <a href="https://leewoii.github.io/Leewoii">Portfolio</a>
