@@ -18,20 +18,16 @@
     </td>
     <td>
       <h3 style="margin: 0;">
-        <a href="https://www.fiverr.com/lc_frostyyy">Fiverr</a> | 
-        <a href="https://www.linkedin.com/in/leeroicayetano">LinkedIn</a> | 
-        <a href="https://tryhackme.com/p/Fr05tyy">TryHackMe</a> | 
-        <a href="https://leewoii.github.io/Leewoii">Portfolio</a>
+        <p align="center">
+          <a href="https://www.fiverr.com/lc_frostyyy">Fiverr</a> •
+          <a href="https://www.linkedin.com/in/leeroicayetano">LinkedIn</a> •
+          <a href="https://tryhackme.com/p/Fr05tyy">TryHackMe</a> •
+          <a href="https://leewoii.github.io/Leewoii">Portfolio</a>
+        </p>
       </h3>
     </td>
   </tr>
 </table>
 <p align="center">
-<img src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/programming%20languages/c%2B%2B.svg" alt="C++ language" height="50" width="50" /> 
-<img src="https://d33wubrfki0l68.cloudfront.net/a49c5f63d431650c696cfd10cb70c880726281df/c9f07/img/logo.png" alt="Bash language" height="45" width="35" /> 
-<img src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/programming%20languages/python.svg" alt="python" height="50" width="50" /> 
-<img src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/programming%20languages/java.svg" alt="java" height="50" width="50" /> 
-<img src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/social%20icons/html5.svg" alt="Html" height="50" width="50" />
-<img src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/social%20icons/css3.svg" alt="CSS" height="50" width="50" />
-<img src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/social%20icons/php.svg" alt="php" height="50" width="50" />
+  <img src="https://skillicons.dev/icons?i=arduino,bash,c,css,dart,figma,firebase,flutter,git,html,java,js,jupyter,laravel,linux,mysql,postgres,postman,tensorflow" alt="Skills" />
 </p>
