@@ -60,7 +60,7 @@
             });
         }
 
-        // Close menu when a link is clicked
+        // Close menu when a link is clicked 
         navLinks.forEach(link => {
             link.addEventListener("click", () => {
                 if (nav && nav.classList.contains("menu-open")) {
