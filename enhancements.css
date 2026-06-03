@@ -408,6 +408,7 @@ body.js-ready #main-content > section.out-view .motion-item {
     }
 }
 
+
 @media (max-width: 700px) {
     .contact-section .contact-container {
         display: grid !important;
