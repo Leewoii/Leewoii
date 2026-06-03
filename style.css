@@ -403,7 +403,7 @@ iframe[src^="https://tryhackme.com/api/v2/badges"] {
 }
 
 /* ========================= */
-/*      ABOUT TABS / SKILLS  */
+/*    ABOUT TABS / SKILLS    */
 /* ========================= */
 .about-tabs {
     grid-column: 1 / -1;
